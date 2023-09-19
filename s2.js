@@ -1,3 +1,4 @@
+// Content-Type: application/javascript
   // Define spreadsheet URL.
   var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1SmXL5EeJBodGhJcqIDIYiYWZ0AAR_QRNWHzsXcelYNA/edit#gid=574679138';
 
