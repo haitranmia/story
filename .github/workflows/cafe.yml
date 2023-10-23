@@ -1,0 +1,25 @@
+name: Run Cafe.py
+
+on:
+  push:
+    branches:
+      - main  # Thay 'main' bằng tên nhánh mà bạn muốn theo dõi
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Sử dụng phiên bản Python bạn cần
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # Cài đặt các phụ thuộc nếu có
+
+      - name: Run Python script
+        run: python cafe.py  # Thay đổi tệp và tên lệnh tùy theo tệp Python
