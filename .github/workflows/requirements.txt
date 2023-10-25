@@ -1,0 +1,2 @@
+echo requests==2.26.0 > requirements.txt
+echo beautifulsoup4==4.10.0 >> requirements.txt

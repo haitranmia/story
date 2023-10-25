@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.x  # Sử dụng phiên bản Python bạn cần
+          node-version: 16
 
       - name: Install dependencies
         run: pip install -r requirements.txt  # Cài đặt các phụ thuộc nếu có
